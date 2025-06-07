@@ -30,4 +30,32 @@ const str = " samrat" // its a string
         
     }
     // use typeof to know the datatype of variables 
+
+
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    // Stack memory used in primitive datatype whenever it used its gives the copy of declared datatype 
+    // heap is used in non- primitive datatype whenever itr used its give reference of original value means any change will affect the original datatype 
+
+    let youtubename = "aayushdixit";
+    let anothername = youtubename;
+
+   anothername = "samratdixit"
+    console.log(youtubename);
+   console.log(anothername)
+
+   // this is the example of stack the change made in the copy not in the original
+   let userone = { 
+  email : "samrat@dixit" ,
+  upi : 123 ,
+   }
+
+
+   let usertwo = userone
+
+   usertwo.email =" aayushdixit@"
+   console.log(userone.email);
+   // this is the example of heap here any change can make differnce to the  original datatype .
+   
+    
     
