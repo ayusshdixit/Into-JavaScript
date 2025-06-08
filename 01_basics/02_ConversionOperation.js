@@ -10,9 +10,6 @@ let valueInNumber=Number(score)
 // true => 1 false => 0
 
 let loggedin =1;
-
-
-
 let myLoggedin = Boolean(loggedin)
 //console.log(myLoggedin);
 //empty => false 
@@ -30,12 +27,12 @@ let strsomenumber = String(somenumber)
  let str1 = "hello"
  let str2 = " samrat" 
 
- let str3 = str1+ str2;
+ let str3 = str1 + str2;
 //console.log(str3);
  
-// console.log ("1"  + 2 )
-// console.log("2" + 3) ;
-// console.log(1 + 2 + "3" ) ;
+// console.log ("1"  + 2 ) => 12
+// console.log("2" + 3) ; => 23
+// console.log(1 + 2 + "3" ) ; => 33
 // console.log ( (3+4) * 5 % 3);  //its a good code practise
 // console.log( +true);
 console.log(+"");   //=> 0

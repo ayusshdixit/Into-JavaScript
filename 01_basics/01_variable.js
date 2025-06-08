@@ -1,6 +1,6 @@
 const CustomerId = 12356;
 let CustomerName="Aayush";
- var AccountNumber="23456";
+ var AccountNumber="23456"; 
  accountCity="Lucknow";
  let Accountstate;
 

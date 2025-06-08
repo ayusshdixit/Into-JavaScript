@@ -5,7 +5,7 @@
 const score =300; // Number it can be 100.3
 const LoggedIn = false ; // its a Boolean 
 const str = " samrat" // its a string 
- let useremail ; // its undefined 
+ let useremail; // its undefined 
  // symbod 
  const id = Symbol(123);
  const userid = Symbol(123);
@@ -44,16 +44,16 @@ const str = " samrat" // its a string
     console.log(youtubename);
    console.log(anothername)
 
-   // this is the example of stack the change made in the copy not in the original
+   // this is the example of stack the change made only in the copy not in the original one 
    let userone = { 
-  email : "samrat@dixit" ,
-  upi : 123 ,
+        email : "samrat@dixit" ,
+        upi : 123 ,
    }
 
 
    let usertwo = userone
 
-   usertwo.email =" aayushdixit@"
+   usertwo.email ="aayushdixit@"
    console.log(userone.email);
    // this is the example of heap here any change can make differnce to the  original datatype .
    
