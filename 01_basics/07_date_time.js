@@ -24,11 +24,15 @@ let myCreateDate = new Date( 2023, 0, 23)
 
 console.log(myCreateDate.toDateString());
 //Mon Jan 23 2023
-let myCreatedDate = new Date( 2023, 0, 23,5,3)
+let myCreatedDate = new Date( "06-09-2025")
 
 console.log(myCreatedDate.toLocaleString());
 // 1/23/2023, 5:03:00 AM
 
 
-let timeStamp = new Date.new();
-log
+let timeStamp = Date.now();// this will give you the time at which the timestamp is been made into milisecond 
+// console.log(timeStamp);
+console.log(myCreatedDate.getTime());
+console.log(Math.floor(Date.now()/1000))
+
+
