@@ -8,7 +8,6 @@
 //  SayMyName()
 
 function AddTwoNumbers(number1 , number2) {
-    
 // let Result= number1+number2   
 // return Result;
 return number1 + number2
@@ -19,7 +18,7 @@ return number1 + number2
     // console.log( "Result:", Result);
 
     function loginusermessage (username){
-        if(username===undefined){                         // runs only when situation is true// also equal to (!username)
+        if(!username){                         // runs only when situation is true// also equal to (!username)
             console.log("Please enter a username");       //provide some output
             return;
         }
@@ -27,27 +26,61 @@ return number1 + number2
         }
 
     //    console.log(loginusermessage("samrat"));
-       console.log(loginusermessage()); // undefined
+     // console.log(loginusermessage()); // undefined
 
-function calculatecartprice (...num1) {              // rest operator to pass multiple value also called spread operator depends on usecase
+function calculatecartprice (... num1) {              // rest operator to pass multiple value also called spread operator depends on usecase
   return num1
 }
 
-console.log(calculatecartprice(200 , 500, 400 ));
+console.log(calculatecartprice(200, 50 ,900));
 
 function calculatecartprice ( val1, val2,...num1) {                // here the first value is taken by val1 second by val2
                                                                    // rest are contained by the following num1 array 
   return num1
 }
-console.log(calculatecartprice(200 , 500, 400,2000 ,900 ));
+  console.log(calculatecartprice(200, 500, 400,2000 ,900 ));
 
- const username ={
-     name: 'samrat',
-     couse: 'bca'
- }
+//  const username ={
+      
+//     course : "bca"
+//  }
   
- function handleobject (anyobject){
-console.log(`Username is ${ anyobject.username} and course ${anyobject.course} `);
 
- }
+// function handleAnyObject (anyobject){
+//   if (anyobject&& anyobject.name){
+//     console.log(anyobject.name);
+//   }
+//     else {
+//       console.log(`please enter the value of ${anyobject.name}`);
+//   return
+//     }
+  
+  
+// }
+// handleAnyObject(username)
+//  username.name ="aayush";
+//  console.log(username.name)
+
+
+
+ function handleobject(anyobject){
+     
+  console.log(`hello this is my name ${anyobject.username} and this is my course price ${anyobject.courseprice}`);
+  
+}
+
+handleobject({
+  username: "sammy",
+  courseprice: 999
+})
+
+const myNewArray = [ 100 ,200 ,300 ,400];
+
+function thisArray (getArray) {
+   return getArray[1];
+}
+
+// console.log(thisArray(myNewArray));
+
+console.log(thisArray([200,300,400,500]));
 
