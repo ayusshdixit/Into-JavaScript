@@ -1,9 +1,18 @@
- (function chaiexe (){
-    console.log('chai is done ');
-    
- }) ();
-      
+// Immediately Invoked Function Expressions (IFFE)
 
-( function chaiaurdedo (name){
-    console.log(`this is chai ${name}`);
-}) ('aayush');  // these are named iffe
+(function chaidedo ()  {
+
+    console.log(`DB CONNECTED`);
+
+} )();
+//This is a IFFE function does require to wrapping up a normal function
+
+
+// ( () => { 
+//     console.log(`DB CONNECTED TWO`)
+// } ) ()
+
+
+( (name) => { 
+    console.log(`DB CONNECTED TWO ${name}`)
+} ) ('samrat')
