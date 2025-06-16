@@ -47,3 +47,11 @@ const max =20 ;
 console.log(Math.floor((Math.random()* max- min) + 1) + min);
 
 
+
+// Maths random always get value between zero and one 
+//multiply by it 10 to push the value towards left But the value can be zero
+// to avoid that we add a 1 in this 
+// the scope opf value you get from to the value is depends on the number the funtion got multiplied by 
+//
+
+
