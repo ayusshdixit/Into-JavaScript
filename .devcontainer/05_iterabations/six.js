@@ -1,3 +1,5 @@
+// filter  Map and Reduce
+
 // const coding =[ 'js', 'cpp','java', 'ruby']
 
 
@@ -6,8 +8,17 @@
 //     return item;
 // })  // for each does'nt return value ..
 
+// console.log(values);  // Here its does'nt return  any value 
+
+const arr = [ 1,2,3,4]
+const values = arr.map(num => num*2)
+    
 // console.log(values);
 
+
+
+
+// SO FOR RETURNING VALUES WE USE FILTER  
 
 const myNums = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] 
 
@@ -51,5 +62,7 @@ const Books = [
 ] ;
 
 let userBook = Books.filter((bk) =>  bk.Genre==='history' )
-let userBook1 = Books.filter((bk) =>  bk.Publish==='1990')
+console.log(userBook);
+
+userBook = Books.filter((bk)=>   bk.Publish >=2000 && bk.Genre==='science')
 console.log(userBook);
